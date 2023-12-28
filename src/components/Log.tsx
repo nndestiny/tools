@@ -13,15 +13,18 @@ export default function Log({ title, logs, onClear }: LogProps) {
         <Button
           variant="contained"
           color="secondary"
-          className="rounded-[24px] h-[32px] px-[26px] bg-white"
+          className="rounded-[24px] h-[32px] px-[26px] bg-white font-medium"
           onClick={onClear}
         >
           Clear
         </Button>
       </div>
-      <Box className=" flex h-[600px] flex-col gap-1 overflow-auto rounded-lg px-4 py-2 bg-[#1D2127]">
+      <Box className=" flex h-[600px] flex-col gap-3 overflow-auto rounded-lg p-5 bg-[#1D2127]">
         {logs.map((log, index) => (
-          <div key={log + index} className=" flex items-center">
+          <div
+            key={log + index}
+            className="flex items-center leading-5 whitespace-pre-wrap"
+          >
             {log}
           </div>
         ))}

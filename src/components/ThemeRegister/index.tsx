@@ -39,7 +39,7 @@ export default function ThemeRegister({ children, themeMode }: IAppProps) {
       <ThemeProvider theme={theme}>
         <CssBaseline />
 
-        <body id="__next">
+        <body id="__next" className="main-bg">
           <Header />
 
           <Container

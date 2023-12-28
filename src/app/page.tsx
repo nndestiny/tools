@@ -90,6 +90,7 @@ export default function Home() {
       );
       results.forEach((result, index) => {
         const address = handleAddress(accounts[index].address);
+        console.log(`index ${index} -- result`, result);
         if (result.status === "fulfilled") {
           pushLog(`${address} ${result.value}`, "success");
           setSuccessCount(count => count + 1);
@@ -133,7 +134,7 @@ export default function Home() {
   }, [privateKeys.length, pushLog, radio, toAddress]);
 
   return (
-    <div className="flex flex-col gap-7 pt-8 lg:px-[160px] lg:bg-[#171A1F] lg:border lg:border-[#2A2F37] lg:border-solid rounded-3xl mb-[50px]">
+    <div className="flex flex-col gap-7 pt-8 lg:px-[160px] lg:bg-[#171A1F] lg:border lg:border-[rgba(42,47,55,0.9)] lg:border-solid rounded-3xl mb-[50px]">
       <div className="text-2xl font-medium">Inscription</div>
       <div className=" flex flex-col gap-[6px]">
         <span>链（选要打铭文的链）:</span>
@@ -305,8 +306,8 @@ export default function Home() {
         className={classNames(
           "transition h-[52px] rounded-[26px] text-[18px] font-semibold",
           running
-            ? "bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500"
-            : "bg-gradient-to-r from-teal-400 via-lime-300 to-yellow-400",
+            ? "bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-500 hover:bg-gradient-to-r hover:from-purple-600 hover:via-pink-600 hover:to-yellow-600"
+            : "bg-gradient-to-r from-teal-400 via-lime-300 to-yellow-400 hover:from-teal-500 hover:via-lime-400 hover:to-yellow-500",
         )}
         onClick={() => {
           // setRunning(prevState => !prevState);

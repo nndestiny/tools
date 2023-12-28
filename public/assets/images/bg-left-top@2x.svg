@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="823px" height="804px" viewBox="0 0 823 804" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>编组 3备份</title>
+    <defs>
+        <linearGradient x1="61.0618904%" y1="48.104125%" x2="47.0388706%" y2="57.3704125%" id="linearGradient-1">
+            <stop stop-color="#191B20" offset="0%"></stop>
+            <stop stop-color="#101216" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="62.0031952%" y1="55.2700406%" x2="52.9381253%" y2="65.2105862%" id="linearGradient-2">
+            <stop stop-color="#101216" offset="0%"></stop>
+            <stop stop-color="#13161A" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="33.1036792%" y1="15.7671448%" x2="57.7739616%" y2="43.2068189%" id="linearGradient-3">
+            <stop stop-color="#121519" offset="0%"></stop>
+            <stop stop-color="#101216" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="tools" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Tool02" transform="translate(191.000000, 131.000000)">
+            <g id="编组-3备份" transform="translate(220.500000, 271.000000) rotate(-304.000000) translate(-220.500000, -271.000000) translate(-54.000000, -40.000000)">
+                <polygon id="路径" fill="url(#linearGradient-1)" points="292.563443 297.981395 0 0 172.405263 622"></polygon>
+                <polygon id="路径-2" fill="url(#linearGradient-2)" points="292.563443 302.803101 0 0 549 297.981395"></polygon>
+                <polygon id="路径-3" fill="url(#linearGradient-3)" points="290.973032 303.750174 172.405263 605.606202 544.184211 297.981395"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

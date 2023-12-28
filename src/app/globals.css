@@ -11,3 +11,12 @@ video {
     max-width: 100%;
     height: auto;
 }
+
+@media (min-width: 1024px) {
+    .main-bg {
+        background: url("/assets/images/bg-left-top@2x.svg") no-repeat top -131px left -191px / 823px 804px,
+        url("/assets/images/bg-right-top@2x.svg") no-repeat top 147px right -84px / 429px 470px,
+        url("/assets/images/bg-left-bottom@2x.svg") no-repeat bottom 606px left 86px / 351px 317px;
+    }
+}
+

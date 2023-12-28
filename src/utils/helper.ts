@@ -8,7 +8,7 @@ import { Hex } from "viem";
  */
 export const handleLog = (log: string, state: string = "success") => {
   return `${new Date().toLocaleString()} ${
-    state === "success" ? "✅" : state === "error" ? "❌" : ""
+    state === "success" ? "    ✅    " : state === "error" ? "    ❌    " : ""
   } => ${log}`;
 };
 
@@ -57,5 +57,5 @@ export function stringToHex(str: string) {
  * @returns A promise that resolves after the specified time has elapsed.
  */
 export function sleep(ms: number) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
+  return new Promise(resolve => setTimeout(resolve, ms));
 }
