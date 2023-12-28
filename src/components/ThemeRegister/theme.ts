@@ -99,6 +99,13 @@ export default function themeRegister(mode: PaletteMode) {
           },
         }),
       },
+      MuiSelect: {
+        styleOverrides: {
+          icon: {
+            color: "#9597A1", // 设置箭头颜色
+          },
+        },
+      },
     },
   });
 }

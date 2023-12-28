@@ -193,13 +193,13 @@ export default function Home() {
       >
         <FormControlLabel
           value="meToMe"
-          control={<Radio />}
+          control={<Radio size="small" />}
           label="自转"
           disabled={running}
         />
         <FormControlLabel
           value="manyToOne"
-          control={<Radio />}
+          control={<Radio size="small" />}
           label="多转一"
           disabled={running}
         />
@@ -258,13 +258,13 @@ export default function Home() {
       >
         <FormControlLabel
           value="all"
-          control={<Radio />}
+          control={<Radio size="small" />}
           label="总 gas"
           disabled={running}
         />
         <FormControlLabel
           value="tip"
-          control={<Radio />}
+          control={<Radio size="small" />}
           label="额外矿工小费"
           disabled={running}
         />
