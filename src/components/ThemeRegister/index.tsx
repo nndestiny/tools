@@ -8,9 +8,7 @@ import { ReactNode, useMemo, useState } from "react";
 import ColorModeContext from "@/contexts/colorModeContext";
 
 import Ad from "../Ad";
-import { GA } from "../GA";
 import Header from "../Header";
-import Media from "../Media";
 import themeRegister from "./theme";
 
 interface IAppProps {
@@ -27,8 +25,8 @@ export default function ThemeRegister({ children, themeMode }: IAppProps) {
   const colorMode = useMemo(
     () => ({
       toggleColorMode: () => {
-        setMode((prevMode) => (prevMode === "light" ? "dark" : "light"));
-        setThemeMode((prevMode) => (prevMode === "light" ? "dark" : "light"));
+        setMode(prevMode => (prevMode === "light" ? "dark" : "light"));
+        setThemeMode(prevMode => (prevMode === "light" ? "dark" : "light"));
       },
     }),
     [setThemeMode],
@@ -47,16 +45,11 @@ export default function ThemeRegister({ children, themeMode }: IAppProps) {
           <Container
             component="main"
             maxWidth="lg"
-            className=" mt-16"
+            className="mt-[70px] pt-[48px]"
           >
-            <Media />
-
             <Ad />
-
             {children}
           </Container>
-
-          <GA />
         </body>
       </ThemeProvider>
     </ColorModeContext.Provider>

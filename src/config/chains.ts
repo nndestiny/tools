@@ -13,6 +13,7 @@ import {
   fantom,
   filecoin,
   gnosis,
+  goerli,
   iotex,
   klaytn,
   linea,
@@ -20,7 +21,6 @@ import {
   mantle,
   meter,
   neonMainnet,
-  okc,
   opBNB,
   optimism,
   polygon,
@@ -193,6 +193,7 @@ export const inscriptionChains = {
   filecoin,
   shibarium,
   sepolia,
+  goerli,
 };
 
 export type ChainKey = keyof typeof inscriptionChains;
